@@ -1,9 +1,6 @@
 version: '3.8'
-
 services:
-  app:
-    image: flex1by/mlops_th02:v1.0.0
+  ml-api:
+    image: flex1by/mlops_th02:v1.0.4
     ports:
       - "5000:5000"
-    volumes:
-      - ./checkpoints:/app/checkpoints 

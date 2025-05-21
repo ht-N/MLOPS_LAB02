@@ -5,6 +5,8 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+COPY ./checkpoints/best_model_logging_demo.pth /app/checkpoints/
+
 COPY . .
 
 EXPOSE 5000
